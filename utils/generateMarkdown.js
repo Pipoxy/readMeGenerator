@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license) {
-    return `[![License](https://img.shields.io/badge/License-${license}-blue.svg)]`;
+    return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`;
   } else {
     return [];
   }
@@ -14,11 +14,11 @@ function renderLicenseLink(license) {
   if (license === null) {
     return [];
   } else if (license === "MIT") {
-    return `[![License](https://opensource.org/licenses/${license})`;
+    return `https://opensource.org/licenses/${license}`;
   } else if (license === "Apache") {
-    return `[![License](https://opensource.org/licenses/${license}-2.0)`;
+    return `https://opensource.org/licenses/${license}-2.0`;
   } else {
-    return `[![License](https://www.gnu.org/licenses/gpl-3.0)`;
+    return `https://www.gnu.org/licenses/gpl-3.0`;
   }
 }
 
